@@ -1,0 +1,41 @@
+/*---- Dark Mode Theme Style ----*/
+.shape-btn.move {
+  left: 0.3rem;
+}
+.dark-theme .main-container {
+  background: #2d2d2d;
+}
+.dark-theme .main-container h3 {
+  color: #fff;
+}
+.dark-theme .main-container h2 {
+  color: #fff;
+}
+.dark-theme .main-container h1 {
+  color: #fff;
+}
+.dark-theme .main-container h4 {
+  color: #fff;
+}
+.dark-theme .container {
+  background: #2d2d2d;
+}
+.dark-theme .about-page {
+  background: #2d2d2d;
+}
+.dark-theme .about-page p {
+  color: #fff;
+}
+.dark-theme .about-page h2 {
+  color: #fff;
+}
+.dark-theme .about-page h1 {
+  color: #fff;
+}
+.dark-theme .disk-insert {
+  border: 3px solid #fff;
+}
+.dark-theme .insert-btn {
+  border: 3px solid #fff;
+  color: #fff;
+}

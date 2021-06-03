@@ -1,0 +1,226 @@
+body {
+  background-color: transparent;
+}
+.main-loading {
+  background: url(../../data/background.jpg) no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  -webkit-app-region: drag;
+  border-radius: 10px;
+  opacity: 0.9;
+}
+.linear {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 99;
+  background: linear-gradient(90deg, #000000e3, #0000005e);
+  border-radius: 10px;
+}
+.logo {
+  width: 15rem;
+  height: 21rem;
+  position: absolute;
+  left: 50%;
+  top: 32%;
+  transform: translate(-50%, -50%);
+  padding: 2em;
+  z-index: 999;
+}
+.st0 {
+  fill: transparent;
+  stroke: white;
+  stroke-width: 15px;
+  animation: svg-moving 2s linear forwards, svg-blinking 0.8s 2.5s infinite alternate;
+  stroke-dasharray: 2500;
+}
+@keyframes svg-moving {
+  0% {
+      opacity: 0;
+      fill: none;
+      stroke-dashoffset: 2500;
+  }
+  30% {
+      opacity: 1;
+      fill: none;
+      stroke-dashoffset: 2500;
+  }
+  90% {
+      fill: transparent;
+  }
+  100% {
+      opacity: 1;
+      fill: #fff;
+  }
+}
+@keyframes svg-blinking {
+  from {
+      opacity: 1;
+  }
+  to {
+      opacity: 0.3;
+  }
+}
+.progress-bar {
+  width: 18rem;
+  height: 8px;
+  background: var( --global-second-color);
+  border-radius: 8px;
+  position: absolute;
+  left: 50%;
+  top: 65%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  z-index: 100;
+}
+.progress {
+  width: 50%;
+  height: 8px;
+  background: #fff;
+  display: block;
+  border-radius: 10px;
+  animation: progress-animation 1.2s infinite;
+}
+.logs {
+  color: #fff;
+  z-index: 100;
+  position: absolute;
+  padding: 1rem;
+  font-size: 1em;
+  font-weight: 600;
+  top: 1rem;
+}
+.p1 {
+  animation: logs1-animation 1s;
+  opacity: 0;
+  position: relative;
+  top: -10rem;
+  animation-delay: 1s;
+  font-family: 'Poppins-Medium';
+}
+@keyframes logs1-animation {
+  0% {
+    opacity: 0;
+    top: -10rem;
+  }
+  25% {
+    opacity: 1;
+    top: 0;
+  }
+  50% {
+    opacity: 1;
+    top: 0;
+  }
+  75% {
+    opacity: 1;
+    top: 0;
+  }
+  100% {
+    opacity: 0;
+    top: 5rem;
+  }
+}
+
+.p2 {
+  animation: logs2-animation 1s;
+  opacity: 0;
+  position: relative;
+  top: -10rem;
+  animation-delay: 2s;
+}
+@keyframes logs2-animation {
+  0% {
+    opacity: 0;
+    top: -10rem;
+  }
+  25% {
+    opacity: 1;
+    top: -1.2rem;
+  }
+  50% {
+    opacity: 1;
+    top: -1.2rem;
+  }
+  75% {
+    opacity: 1;
+    top: -1.2rem;
+  }
+  100% {
+    opacity: 0;
+    top: 5rem;
+  }
+}
+
+.p3 {
+  animation: logs3-animation 1s;
+  opacity: 0;
+  position: relative;
+  top: -10rem;
+  animation-delay: 3s;
+}
+@keyframes logs3-animation {
+  0% {
+    opacity: 0;
+    top: -10rem;
+  }
+  25% {
+    opacity: 1;
+    top: -2.4rem;
+  }
+  50% {
+    opacity: 1;
+    top: -2.4rem;
+  }
+  75% {
+    opacity: 1;
+    top: -2.4rem;
+  }
+  100% {
+    opacity: 0;
+    top: 5rem;
+  }
+}
+
+.p4 {
+  animation: logs4-animation 1s;
+  opacity: 0;
+  position: relative;
+  top: -10rem;
+  animation-delay: 4s;
+}
+@keyframes logs4-animation {
+  0% {
+    opacity: 0;
+    top: -10rem;
+  }
+  25% {
+    opacity: 1;
+    top: -3.6rem;
+  }
+  50% {
+    opacity: 1;
+    top: -3.6rem;
+  }
+  75% {
+    opacity: 1;
+    top: -3.6rem;
+  }
+  100% {
+    opacity: 0;
+    top: 5rem;
+  }
+}
+
+@keyframes progress-animation {
+  0% {
+    margin-left: 60%;
+  }
+  50% {
+    margin-left: -20%;
+  }
+  100% {
+    margin-left: 70%;
+  }
+}

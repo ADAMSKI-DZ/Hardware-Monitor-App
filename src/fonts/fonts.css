@@ -1,0 +1,13 @@
+/*----- Poppins font -----*/
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url(./Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: "Poppins-Medium";
+    src: url(./Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: "Poppins";
+    src: url(./Poppins-Regular.ttf);
+}

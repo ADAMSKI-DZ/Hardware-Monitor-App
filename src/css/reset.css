@@ -1,0 +1,30 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  font-size: 16px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+li {
+  list-style: none;
+}
+button {
+  border: none;
+  cursor: pointer;
+  font-family: 'Poppins';
+}
+button:focus {
+  outline: none;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/root.css">
+    <link rel="stylesheet" href="./css/darkmode.css">
+    <title class="title">Hardware Monitor</title>
+</head>
+<body>
+        <div class="container">
+    <nav class="main-nav">
+        <div class="logo">
+            <img src="../data/Logo.png" alt="logo">
+        </div>
+        <div class="top-title">
+            <h3 class="app-title"></h3>
+        </div>
+        <div class="menu">
+            <ul>
+                <a href="#" class="home" onclick="showPanel(0,'#013f24')">
+                <li>Home</li>
+                </a>
+
+                <a href="#" class="cpu" onclick="showPanel(1,'#013f24')">
+                <li>Cpu Monitor</li>
+                </a>
+
+                <a href="#" onclick="showPanel(2,'#013f24')">
+                <li>Disk Monitor</li>
+                </a>
+
+                <a href="#" onclick="showPanel(3,'#013f24')">
+                <li>Ram Monitor</li>
+                </a>
+            </ul>
+        </div>
+        <div class="dark-mode">
+            <div class="dark-btn">
+                <span class="shape-btn"></span>
+                <img src="../data/moon.png" alt="dark">
+                <img src="../data/sun.png" alt="light">
+            </div>
+        </div>
+        <div class="tasks">
+            <img class="minimize-btn" src="../data/minimize.png" alt="minimize">
+            <img class="close-btn" src="../data/close.png" alt="close">
+        </div>
+    </nav>
+    <div class="main-container">
+        <div class="contents home">
+        <img src="../data/home.png" alt="home">
+        <div class="welcome">
+    <h1>hello<h2 class="user-name"></h2> </h1>
+    </div>
+    <h3>Hardware Monitor app is electron based app</h3>
+    <h3>Coded with HTML and CSS and JAVASCRIPT</h3>
+    <h3>Select one of any pages in top nav</h3>
+    <h3>enjoy 😘</h3>
+    <h4 class="date"></h4>
+    <a href="#" class="show-about">About</a>
+        </div>
+        <div class="contents cpu">
+        <img src="../data/cpu.png" alt="cpu">
+    <h1>Cpu Monitor</h1>
+    <h3 class="cpu-info"></h3>
+    <h3 class="core"></h3>
+    <h3 class="speed"></h3>
+    <h3 class="cpu-per"></h3>
+        </div>
+        <div class="contents disk">
+        <img src="../data/hdd.png" alt="disk">
+    <h1>Disk Monitor</h1>
+    <div class="disk-container">
+    <h3 class="disk-mount"></h3>
+    <h3 class="disk-status"></h3>
+    <h3 class="total-disk"></h3>
+    <h3 class="used-disk"></h3>
+    <h3 class="free-disk"></h3>
+    </div>
+    <div class="change-btn">
+        <a href="#">Change</a>
+    </div>
+    <div class="input-container">
+        <h4 class="disc">Please Type Disk Name (Uppercase):</h4>
+    <input type="text" class="disk-insert" required>
+    <a href="#" class="insert-btn">Send</a>
+    <p class="invalid"></p>
+    </div>
+        </div>
+        <div class="contents ram">
+        <img src="../data/ram.png" alt="ram">
+    <h1>Ram Monitor</h1>
+    <h3 class="total-ram"></h3>
+    <h3 class="free-ram"></h3>
+    <h3 class="mem-per"></h3>
+        </div>
+    </div>
+    <div class="about-page">
+        <h1>About Me</h1>
+        <img class="owner" src="../data/owner.jpg" alt="owner">
+        <h2>Abdel Malek Tammal</h3>
+        <p>i am 18 years old a web developer / designer</p><br>
+        <p>based in algeria, i truly love everything related to web</p><br>
+        <p>mostly designing an developing websites / applications.r</p>
+        <div class="close-about">
+            <img src="../data/exit.png" alt="exit">
+        </div>
+        <div class="social-container">
+            <a class="social-fb" href="#">
+            <img src="../data/facebook.png" alt="facebook">
+            </a>
+
+            <a class="social-ig" href="#">
+            <img src="../data/instagram.png" alt="instagram">
+            </a>
+
+            <a class="social-yt" href="#">
+            <img src="../data/youtube.png" alt="youtube">
+            </a>
+
+            <a class="social-cp" href="#">
+            <img src="../data/codepen.png" alt="codepen">
+            </a>
+
+            <a class="social-ws" href="#">
+            <img src="../data/website.png" alt="website">
+            </a>
+        </div>
+    </div>
+        </div>
+    <script src="./js/app.js"></script>
+    <script src="./js/dark-mode.js"></script>
+    <script src="./js/disklist.js"></script>
+    <script src="./js/harddisk.js"></script>
+    <script src="./js/hardware-monitor.js"></script>
+    <script src="./js/tasks.js"></script>
+</body>
+</html>

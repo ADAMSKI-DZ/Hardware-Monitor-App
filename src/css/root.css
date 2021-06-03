@@ -1,0 +1,14 @@
+/*----- Root Of All -----*/
+
+/*----- Root Of Colors -----*/
+:root {
+    --global-bg-color: #e67e22;
+    --global-text-color: #ffffff;
+    --global-second-color: #d35400;
+}
+
+/*----- Root Of Sizes -----*/
+
+:root {
+    --global-height-size: 7rem;
+}
