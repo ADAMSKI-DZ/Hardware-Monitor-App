@@ -13,66 +13,66 @@ and also used html , css , javascript and some of npm packages
 1. diskspace
 
 ```bash
-    npm i diskspace
+npm i diskspace
 ```
 
 2. os-utils
 
 ```bash
-    npm i os-utils
+npm i os-utils
 ```
 
 3. systeminformation
 
 ```bash
-    npm i systeminformation
+npm i systeminformation
 ```
 
 ---
 
 > To start the app 🚀
 
-install electron js
+Install electron js
 
 ```bash
-    npm i --save-dev electron
+npm i --save-dev electron
 ```
 
-start the app with
+Start the app with
 
 ```bash
-    npm start
+npm start
 ```
 
 ---
 
 > Packaging the app 🧱
 
-install electron packager
+Install electron packager
 
 ```bash
-    npm install electron-packager --save-dev
+npm install electron-packager --save-dev
 ```
 
-- package for windows
+- Package for windows
 
-add this code in package.json in scripts
+Add this code in package.json in scripts
 
 ```json
-    "package-win": "electron-packager . hardware-monitor --overwrite --asar=true --platform=win32 --arch=ia32 --icon=data/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Hardware Monitor\""
+"package-win": "electron-packager . hardware-monitor --overwrite --asar=true --platform=win32 --arch=ia32 --icon=data/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Hardware Monitor\""
 ```
 
-- package for linux
+- Package for linux
 
-add this code in package.json in scripts
+Add this code in package.json in scripts
 
 ```json
-    "package-linux" : "electron-packager . --overwrite --platform=linux --arch=x64 --icon=data/icon.png --prune=true --out=release-builds"
+"package-linux" : "electron-packager . --overwrite --platform=linux --arch=x64 --icon=data/icon.png --prune=true --out=release-builds"
 ```
 
 ---
 
-## more info about electron packager 📜
+## More info about electron packager 📜
 
 [Electron Packager](https://github.com/electron/electron-packager "Electron Packager")
 
