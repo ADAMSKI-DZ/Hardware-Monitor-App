@@ -4,7 +4,7 @@
 
 This app is coded for pc , and use Electron js to coded it
 
-and also used html , css , javascript and some of npm packages
+and also used html , css , javascript , electron and some of npm packages
 
 # Setup the app 📲
 
